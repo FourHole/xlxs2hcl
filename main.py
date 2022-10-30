@@ -1,12 +1,26 @@
 import pandas as xl
+import json
 import modules
 
-output = open("output.txt","w")
+vm_config_file = "output.tf.json"
 
 workbook = xl.read_excel('test.xlsx')
 
-for row in workbook.itertuples(index=True, name='Pandas'):
-    vm = modules.create_vapp_vm(row.name, row.os, row.ram, row.cpu)
-    print(str(vm))
+with open(vm_config_file) as js:
+    data = json.load(js)
 
-#print(workbook.loc[1]['name'])
+for row in workbook.itertuples(index=True, name='Pandas'):
+    
+    data['resource']['aws_instance'][row.name] = {
+            "name": row.name,
+            "os": row.os,
+            "ram": row.ram,
+            "cpu": row.cpu
+        }
+
+with open(vm_config_file, 'w') as js:
+    json.dump(data, js, indent=1)
+
+js.close()
+
+
