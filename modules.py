@@ -14,10 +14,5 @@ class create_vapp_vm:
             f'  cpus    = {self.cpu}\n' 
             f'}}'
         )
-        
-#vm1 = vm('vm1','linux',16,4)
 
-#f = open("output.tf", "w")
 
-#f.write(str(vm1))
-#f.close()
