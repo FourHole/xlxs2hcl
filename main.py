@@ -12,10 +12,12 @@ with open(vm_config_file) as js:
 for row in workbook.itertuples(index=True, name='Pandas'):
     
     data['resource']['aws_instance'][row.name] = {
-        "name": row.name,
-        "os": row.os,
-        "ram": row.ram,
-        "cpu": row.cpu
+        "ami": row.ami,
+        "instance_type": row.instance_type,
+        "key_name": row.key_name,
+        "Tags": {
+            "Name": row.name
+        }
     }
 
 with open(vm_config_file, 'w') as js:

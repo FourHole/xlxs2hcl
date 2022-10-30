@@ -18,28 +18,44 @@
                 }
             },
             "vm1": {
-                "name": "vm1",
-                "os": "windows",
-                "ram": 8,
-                "cpu": 2
+                "ami": "ami-05fa00d4c63e32376",
+                "instance_type": "t2.micro",
+                "key_name": "deployer-key",
+                "Tags": {
+                    "Name": "vm1"
+                }
             },
             "vm2": {
-                "name": "vm2",
-                "os": "linux",
-                "ram": 16,
-                "cpu": 4
+                "ami": "ami-05fa00d4c63e32377",
+                "instance_type": "t2.micro",
+                "key_name": "deployer-key",
+                "Tags": {
+                    "Name": "vm2"
+                }
             },
             "vm3": {
-                "name": "vm3",
-                "os": "windows",
-                "ram": 32,
-                "cpu": 8
+                "ami": "ami-05fa00d4c63e32378",
+                "instance_type": "t2.micro",
+                "key_name": "deployer-key",
+                "Tags": {
+                    "Name": "vm3"
+                }
             },
             "vm4": {
-                "name": "vm4",
-                "os": "linux",
-                "ram": 4,
-                "cpu": 2
+                "ami": "ami-05fa00d4c63e32379",
+                "instance_type": "t2.micro",
+                "key_name": "deployer-key",
+                "Tags": {
+                    "Name": "vm4"
+                }
+            },
+            "vm5": {
+                "ami": "ami-05fa00d4c63e32380",
+                "instance_type": "t2.micro",
+                "key_name": "deployer-key",
+                "Tags": {
+                    "Name": "vm5"
+                }
             }
         }
     }
