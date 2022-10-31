@@ -10,35 +10,11 @@
                 }
             },
             "vm2": {
-                "ami": "ami-05fa00d4c63e32377",
+                "ami": "ami-05fa00d4c63e32376",
                 "instance_type": "t2.micro",
                 "key_name": "deployer-key",
                 "Tags": {
                     "Name": "vm2"
-                }
-            },
-            "vm3": {
-                "ami": "ami-05fa00d4c63e32378",
-                "instance_type": "t2.micro",
-                "key_name": "deployer-key",
-                "Tags": {
-                    "Name": "vm3"
-                }
-            },
-            "vm4": {
-                "ami": "ami-05fa00d4c63e32379",
-                "instance_type": "t2.micro",
-                "key_name": "deployer-key",
-                "Tags": {
-                    "Name": "vm4"
-                }
-            },
-            "vm6": {
-                "ami": "ami-05fa00d4c63e32379",
-                "instance_type": "t2.micro",
-                "key_name": "deployer-key",
-                "Tags": {
-                    "Name": "vm6"
                 }
             }
         }
