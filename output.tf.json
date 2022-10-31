@@ -1,22 +1,6 @@
 {
     "resource": {
         "aws_instance": {
-            "aws1": {
-                "ami": "ami-05fa00d4c63e32376",
-                "instance_type": "t2.micro",
-                "key_name": "deployer-key",
-                "tags": {
-                    "Name": "aws1"
-                }
-            },
-            "aws2": {
-                "ami": "ami-05fa00d4c63e32376",
-                "instance_type": "t2.micro",
-                "key_name": "deployer-key",
-                "tags": {
-                    "Name": "aws2"
-                }
-            },
             "vm1": {
                 "ami": "ami-05fa00d4c63e32376",
                 "instance_type": "t2.micro",
@@ -49,12 +33,12 @@
                     "Name": "vm4"
                 }
             },
-            "vm5": {
-                "ami": "ami-05fa00d4c63e32380",
+            "vm6": {
+                "ami": "ami-05fa00d4c63e32379",
                 "instance_type": "t2.micro",
                 "key_name": "deployer-key",
                 "Tags": {
-                    "Name": "vm5"
+                    "Name": "vm6"
                 }
             }
         }
