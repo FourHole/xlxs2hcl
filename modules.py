@@ -31,7 +31,7 @@ class create_vms:
                 "ami": row.ami,
                 "instance_type": row.instance_type,
                 "key_name": row.key_name,
-                "Tags": {
+                "tags": {
                     "Name": row.name
             }
         }
